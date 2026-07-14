@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fabricación e instalación de armarios a medida, walk-in closets y vestidores en Bolivia. Diseño contemporáneo, iluminación LED, melamina, MDF, madera y herrajes.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#211814">
+  <title>Armarios a Medida en Bolivia | Diseño e Instalación</title>
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root{
+      --walnut:#5a3b2b;
+      --oak:#b58f68;
+      --cream:#f1e7d8;
+      --sand:#d9c5ab;
+      --ivory:#fbf8f2;
+      --charcoal:#171310;
+      --brass:#b48a4b;
+      --smoke:#6f6257;
+      --hair:rgba(23,19,16,.14);
+      --paper:min(1440px,calc(100% - 34px));
+      --flow:cubic-bezier(.2,.75,.25,1);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        linear-gradient(180deg,#f8f2e9 0%,#f2e8dc 42%,#efe4d6 100%);
+      color:var(--charcoal);
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.035;
+      z-index:999;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    }
+
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+
+    .atelier-rail{
+      position:fixed;
+      left:18px;
+      top:18px;
+      bottom:18px;
+      width:78px;
+      z-index:60;
+      background:rgba(23,19,16,.94);
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 0;
+      box-shadow:0 18px 50px rgba(31,22,17,.18);
+    }
+
+    .atelier-emblem{
+      width:42px;
+      height:42px;
+      border:1px solid rgba(255,255,255,.34);
+      display:grid;
+      place-items:center;
+      position:relative;
+    }
+
+    .atelier-emblem::before,
+    .atelier-emblem::after{
+      content:"";
+      position:absolute;
+      background:var(--brass);
+    }
+
+    .atelier-emblem::before{width:1px;height:100%}
+    .atelier-emblem::after{width:100%;height:1px}
+
+    .atelier-emblem i{font-size:12px;z-index:2;background:var(--charcoal);padding:3px}
+
+    .atelier-links{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+    }
+
+    .atelier-links a{
+      width:42px;
+      height:42px;
+      display:grid;
+      place-items:center;
+      color:#cfc2b4;
+      border:1px solid transparent;
+      transition:.25s ease;
+    }
+
+    .atelier-links a:hover{
+      color:#fff;
+      border-color:rgba(255,255,255,.25);
+      background:rgba(255,255,255,.05);
+    }
+
+    .atelier-contact{
+      writing-mode:vertical-rl;
+      transform:rotate(180deg);
+      font-size:9px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:#d0c2b5;
+    }
+
+    .showroom-header{
+      width:calc(var(--paper) - 96px);
+      margin:18px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      min-height:74px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      align-items:center;
+      gap:24px;
+      padding:0 8px 0 24px;
+      border-bottom:1px solid rgba(23,19,16,.16);
+      position:relative;
+      z-index:20;
+    }
+
+    .showroom-signature{
+      display:flex;
+      align-items:end;
+      gap:16px;
+    }
+
+    .showroom-signature strong{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:28px;
+      font-weight:500;
+      letter-spacing:-.04em;
+    }
+
+    .showroom-signature span{
+      padding-bottom:4px;
+      color:#74675c;
+      font-size:10px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .showroom-command{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .showroom-command small{
+      color:#7d7065;
+      text-transform:uppercase;
+      letter-spacing:.11em;
+      font-size:9px;
+    }
+
+    .showroom-command a{
+      min-height:46px;
+      padding:0 18px;
+      background:var(--charcoal);
+      color:#fff;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .grand-wardrobe{
+      width:calc(var(--paper) - 96px);
+      margin:0 auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      min-height:760px;
+      display:grid;
+      grid-template-columns:.76fr 1.24fr;
+      position:relative;
+      overflow:hidden;
+      border-bottom:1px solid var(--hair);
+    }
+
+    .grand-wardrobe::before{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:160px;
+      background:linear-gradient(180deg,rgba(109,79,58,0),rgba(109,79,58,.12));
+      pointer-events:none;
+    }
+
+    .wardrobe-copy{
+      padding:98px 56px 64px 26px;
+      position:relative;
+      z-index:3;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .wardrobe-label{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      width:max-content;
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      color:#78685b;
+    }
+
+    .wardrobe-label::before{
+      content:"";
+      width:46px;
+      height:1px;
+      background:var(--brass);
+    }
+
+    .wardrobe-copy h1{
+      margin:26px 0 22px;
+      max-width:650px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-weight:500;
+      font-size:clamp(58px,7vw,108px);
+      line-height:.84;
+      letter-spacing:-.065em;
+    }
+
+    .wardrobe-copy h1 span{
+      display:block;
+      color:var(--walnut);
+      margin-left:15%;
+      font-style:italic;
+    }
+
+    .wardrobe-copy p{
+      max-width:560px;
+      color:#675b52;
+      line-height:1.8;
+      font-size:15px;
+    }
+
+    .wardrobe-actions{
+      margin-top:34px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .wardrobe-actions a{
+      min-height:54px;
+      padding:0 20px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border:1px solid var(--charcoal);
+      font-size:11px;
+      font-weight:850;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      transition:.3s var(--flow);
+    }
+
+    .wardrobe-actions a:first-child{
+      background:var(--charcoal);
+      color:#fff;
+    }
+
+    .wardrobe-actions a:hover{transform:translateY(-3px)}
+
+    .wardrobe-notes{
+      margin-top:50px;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      border-top:1px solid var(--hair);
+    }
+
+    .wardrobe-notes div{
+      padding:18px 16px 0 0;
+      min-height:82px;
+    }
+
+    .wardrobe-notes div+div{
+      border-left:1px solid var(--hair);
+      padding-left:18px;
+    }
+
+    .wardrobe-notes strong{
+      display:block;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+
+    .wardrobe-notes span{
+      display:block;
+      margin-top:7px;
+      color:#74685e;
+      font-size:12px;
+      line-height:1.5;
+    }
+
+    .closet-stage{
+      position:relative;
+      min-height:760px;
+      overflow:hidden;
+      background:
+        linear-gradient(90deg,#dfd1c2 0 9%,transparent 9% 91%,#d5c2af 91%),
+        linear-gradient(180deg,#dfd4c8 0 72%,#b58f68 72% 74%,#7c5b46 74%);
+      perspective:1600px;
+    }
+
+    .ceiling-glow{
+      position:absolute;
+      left:12%;
+      right:12%;
+      top:4%;
+      height:12px;
+      background:linear-gradient(90deg,transparent,#fff4d8 16% 84%,transparent);
+      filter:blur(8px);
+      opacity:.95;
+    }
+
+    .closet-shell{
+      position:absolute;
+      width:78%;
+      height:62%;
+      right:8%;
+      top:16%;
+      display:grid;
+      grid-template-columns:.82fr 1.18fr .82fr;
+      gap:8px;
+      transform:rotateY(-7deg);
+      transform-style:preserve-3d;
+      filter:drop-shadow(24px 32px 24px rgba(45,31,22,.22));
+    }
+
+    .closet-bay{
+      position:relative;
+      background:linear-gradient(180deg,#604130,#3e2a20);
+      border:10px solid #4c3327;
+      overflow:hidden;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.05);
+    }
+
+    .closet-bay::before{
+      content:"";
+      position:absolute;
+      left:10px;
+      right:10px;
+      top:10px;
+      height:7px;
+      background:#ffd791;
+      box-shadow:0 0 14px #ffc86b,0 0 28px rgba(255,202,108,.5);
+      opacity:.85;
+    }
+
+    .closet-bay.central{
+      background:linear-gradient(180deg,#6f4b37,#4d3428);
+    }
+
+    .closet-bay.central::after{
+      content:"";
+      position:absolute;
+      inset:52% 8% auto;
+      height:2px;
+      background:rgba(255,255,255,.15);
+      box-shadow:0 42px 0 rgba(255,255,255,.12),0 84px 0 rgba(255,255,255,.1);
+    }
+
+    .hanger-bar{
+      position:absolute;
+      left:18%;
+      right:18%;
+      top:22%;
+      height:5px;
+      background:linear-gradient(180deg,#d8bc8a,#8f6a3e);
+      border-radius:4px;
+    }
+
+    .hanger-bar::before,
+    .hanger-bar::after{
+      content:"";
+      position:absolute;
+      top:5px;
+      width:74px;
+      height:110px;
+      border:3px solid rgba(239,225,211,.55);
+      border-top:0;
+      clip-path:polygon(50% 0,100% 20%,88% 100%,12% 100%,0 20%);
+    }
+
+    .hanger-bar::before{left:18%}
+    .hanger-bar::after{right:18%}
+
+    .shelf-set{
+      position:absolute;
+      inset:18% 12% 12%;
+      display:grid;
+      grid-template-rows:repeat(4,1fr);
+      gap:14px;
+    }
+
+    .shelf-set span{
+      border-bottom:6px solid #8d664a;
+      position:relative;
+    }
+
+    .shelf-set span::before{
+      content:"";
+      position:absolute;
+      left:8%;
+      bottom:8px;
+      width:48%;
+      height:22px;
+      border-radius:2px 2px 0 0;
+      background:linear-gradient(90deg,#cfb8a1,#8f735e);
+      box-shadow:42px 0 0 #d8c0aa;
+    }
+
+    .drawer-stack{
+      position:absolute;
+      left:10%;
+      right:10%;
+      bottom:10%;
+      display:grid;
+      gap:9px;
+    }
+
+    .drawer-stack span{
+      height:46px;
+      background:linear-gradient(180deg,#5d3f30,#493126);
+      border:1px solid rgba(255,255,255,.08);
+      position:relative;
+    }
+
+    .drawer-stack span::after{
+      content:"";
+      position:absolute;
+      left:50%;
+      top:12px;
+      width:54px;
+      height:4px;
+      transform:translateX(-50%);
+      background:var(--brass);
+      border-radius:4px;
+    }
+
+    .sliding-panel{
+      position:absolute;
+      top:0;
+      bottom:0;
+      width:50%;
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.19),transparent 38%),
+        linear-gradient(180deg,rgba(231,223,213,.78),rgba(193,177,162,.72));
+      border:9px solid #e7dfd4;
+      box-shadow:inset 0 0 0 2px #b5a99e,12px 0 26px rgba(31,22,17,.12);
+      backdrop-filter:blur(3px);
+      transform-style:preserve-3d;
+    }
+
+    .sliding-panel.left{
+      left:0;
+      z-index:8;
+    }
+
+    .sliding-panel.right{
+      right:0;
+      z-index:9;
+    }
+
+    .sliding-panel::before{
+      content:"";
+      position:absolute;
+      top:50%;
+      width:10px;
+      height:74px;
+      transform:translateY(-50%);
+      background:linear-gradient(90deg,#7f623a,#d5b477,#8c6a3d);
+      border-radius:6px;
+    }
+
+    .sliding-panel.left::before{right:18px}
+    .sliding-panel.right::before{left:18px}
+
+    .ottoman{
+      position:absolute;
+      width:180px;
+      height:86px;
+      left:11%;
+      bottom:9%;
+      background:linear-gradient(180deg,#cbb7a2,#a68f79);
+      border-radius:50% 50% 18px 18px;
+      box-shadow:0 18px 22px rgba(68,43,28,.18);
+    }
+
+    .ottoman::before{
+      content:"";
+      position:absolute;
+      left:18px;
+      right:18px;
+      bottom:-14px;
+      height:20px;
+      border-left:6px solid #5e4736;
+      border-right:6px solid #5e4736;
+    }
+
+    .stage-caption{
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      padding:12px 14px;
+      background:rgba(23,19,16,.78);
+      color:#fff;
+      font-size:9px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .material-band{
+      width:100%;
+      overflow:hidden;
+      background:#221713;
+      color:#efe4d7;
+      padding:16px 0;
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .material-loop{
+      width:max-content;
+      display:flex;
+      gap:28px;
+      align-items:center;
+      white-space:nowrap;
+      animation:rollMaterials 26s linear infinite;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:16px;
+      letter-spacing:.05em;
+    }
+
+    .material-loop i{font-size:8px;color:var(--brass)}
+    @keyframes rollMaterials{to{transform:translateX(-50%)}}
+
+    .collection-board{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:64px;
+    }
+
+    .collection-heading{
+      position:sticky;
+      top:20px;
+      align-self:start;
+      padding-right:20px;
+    }
+
+    .microtag{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#796b60;
+      font-size:10px;
+      font-weight:850;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+    }
+
+    .microtag::before{
+      content:"";
+      width:34px;
+      height:1px;
+      background:var(--brass);
+    }
+
+    .collection-heading h2,
+    .service-city-copy h2,
+    .bank-copy h2,
+    .questions-copy h2{
+      margin:22px 0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(44px,5vw,76px);
+      font-weight:500;
+      line-height:.96;
+      letter-spacing:-.05em;
+    }
+
+    .collection-heading p{
+      color:#675c53;
+      line-height:1.8;
+      max-width:500px;
+    }
+
+    .collection-sequence{
+      border-top:1px solid var(--hair);
+    }
+
+    .collection-item{
+      display:grid;
+      grid-template-columns:52px 1fr;
+      gap:20px;
+      padding:28px 0;
+      border-bottom:1px solid var(--hair);
+      min-height:150px;
+      transition:.3s var(--flow);
+    }
+
+    .collection-item:hover{
+      padding-left:18px;
+      background:rgba(255,255,255,.4);
+    }
+
+    .collection-number{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:34px;
+      color:#a08e7e;
+    }
+
+    .collection-item h3{
+      margin:0 0 10px;
+      font-size:22px;
+      letter-spacing:-.025em;
+    }
+
+    .collection-item p{
+      margin:0;
+      color:#6e6258;
+      line-height:1.7;
+      font-size:14px;
+    }
+
+    .collection-item small{
+      display:block;
+      margin-top:14px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:9px;
+      color:#8c7867;
+    }
+
+    .craft-room{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      min-height:600px;
+      display:grid;
+      grid-template-columns:.94fr 1.06fr;
+      background:#1c1512;
+      color:#f6eee5;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .craft-room::after{
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      right:-180px;
+      bottom:-200px;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:50%;
+      box-shadow:0 0 0 58px rgba(255,255,255,.025),0 0 0 116px rgba(255,255,255,.018);
+    }
+
+    .craft-copy{
+      padding:72px 58px;
+      position:relative;
+      z-index:2;
+    }
+
+    .craft-copy h2{
+      margin:22px 0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(42px,4.6vw,72px);
+      font-weight:500;
+      line-height:.96;
+      letter-spacing:-.045em;
+    }
+
+    .craft-copy p{
+      color:#cdbfb3;
+      line-height:1.8;
+      max-width:590px;
+    }
+
+    .craft-ledger{
+      margin-top:38px;
+      border-top:1px solid rgba(255,255,255,.14);
+    }
+
+    .craft-line{
+      display:grid;
+      grid-template-columns:130px 1fr;
+      gap:16px;
+      min-height:64px;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .craft-line strong{
+      font-size:10px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+    }
+
+    .craft-line span{
+      color:#b7aaa0;
+      font-size:13px;
+    }
+
+    .craft-visual{
+      position:relative;
+      min-height:600px;
+      background:
+        linear-gradient(135deg,rgba(181,143,104,.12),transparent),
+        repeating-linear-gradient(90deg,transparent 0 46px,rgba(255,255,255,.04) 46px 47px);
+    }
+
+    .joinery-frame{
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:340px;
+      height:340px;
+      transform:translate(-50%,-50%) rotate(45deg);
+      border:26px solid #6f4c38;
+      box-shadow:0 30px 60px rgba(0,0,0,.32),inset 0 0 0 2px rgba(255,255,255,.08);
+    }
+
+    .joinery-frame::before,
+    .joinery-frame::after{
+      content:"";
+      position:absolute;
+      background:#ad8b64;
+    }
+
+    .joinery-frame::before{
+      width:18px;
+      height:100%;
+      left:50%;
+      transform:translateX(-50%);
+    }
+
+    .joinery-frame::after{
+      height:18px;
+      width:100%;
+      top:50%;
+      transform:translateY(-50%);
+    }
+
+    .joinery-core{
+      position:absolute;
+      left:50%;
+      top:50%;
+      width:116px;
+      height:116px;
+      transform:translate(-50%,-50%) rotate(-45deg);
+      border-radius:50%;
+      border:1px solid rgba(255,255,255,.22);
+      box-shadow:0 0 0 24px rgba(255,255,255,.025);
+    }
+
+    .service-city{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      display:grid;
+      grid-template-columns:.7fr 1.3fr;
+      gap:52px;
+      align-items:stretch;
+    }
+
+    .service-city-copy{
+      padding:38px 0;
+    }
+
+    .service-city-copy p{
+      color:#695d54;
+      line-height:1.8;
+      max-width:470px;
+    }
+
+    .city-finder{
+      margin-top:28px;
+      display:flex;
+      min-height:58px;
+      border-bottom:1px solid var(--charcoal);
+      background:rgba(255,255,255,.36);
+    }
+
+    .city-finder i{
+      width:58px;
+      display:grid;
+      place-items:center;
+    }
+
+    .city-finder input{
+      flex:1;
+      min-width:0;
+      border:0;
+      outline:0;
+      background:transparent;
+      padding:0 14px 0 0;
+      color:var(--charcoal);
+    }
+
+    .city-cabinet{
+      min-height:610px;
+      background:#dfd0c0;
+      padding:30px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .city-cabinet::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(rgba(23,19,16,.055) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(23,19,16,.055) 1px,transparent 1px);
+      background-size:38px 38px;
+      mask-image:linear-gradient(135deg,#000,transparent 84%);
+    }
+
+    .city-cabinet-head{
+      position:relative;
+      z-index:2;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding-bottom:18px;
+      border-bottom:1px solid rgba(23,19,16,.14);
+    }
+
+    .city-cabinet-head strong{
+      font-size:10px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+
+    .city-cabinet-head span{
+      font-size:10px;
+      color:#6d6056;
+    }
+
+    .territory-shape{
+      position:absolute;
+      width:290px;
+      height:330px;
+      right:7%;
+      top:15%;
+      background:linear-gradient(150deg,rgba(255,255,255,.48),rgba(180,138,75,.22));
+      border:2px solid #48362c;
+      clip-path:polygon(28% 0,68% 7%,86% 24%,83% 48%,100% 68%,69% 100%,34% 94%,0 60%,11% 20%);
+      filter:drop-shadow(16px 22px 18px rgba(55,38,27,.14));
+    }
+
+    .territory-shape::before,
+    .territory-shape::after{
+      content:"";
+      position:absolute;
+      width:10px;
+      height:10px;
+      background:var(--charcoal);
+      border-radius:50%;
+      box-shadow:0 0 0 7px rgba(255,255,255,.58);
+    }
+
+    .territory-shape::before{left:29%;top:38%}
+    .territory-shape::after{right:22%;top:54%}
+
+    .city-drawers{
+      position:relative;
+      z-index:3;
+      width:54%;
+      margin-top:38px;
+      display:grid;
+      gap:8px;
+    }
+
+    .city-drawer{
+      min-height:47px;
+      border:0;
+      border-bottom:1px solid rgba(23,19,16,.15);
+      background:rgba(255,255,255,.42);
+      padding:0 13px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      text-align:left;
+      transition:.25s ease;
+    }
+
+    .city-drawer:hover,
+    .city-drawer.selected{
+      transform:translateX(7px);
+      background:#fff;
+    }
+
+    .city-drawer.hide{display:none}
+    .city-drawer strong{font-size:12px}
+    .city-drawer span{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#6e6057}
+
+    .bank-salon{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      min-height:620px;
+      background:#f7f0e7;
+      border:1px solid rgba(23,19,16,.12);
+      overflow:hidden;
+    }
+
+    .bank-copy{
+      padding:68px 58px;
+    }
+
+    .bank-copy p{
+      color:#685b51;
+      line-height:1.8;
+      max-width:560px;
+    }
+
+    .bank-process{
+      margin-top:38px;
+      display:grid;
+      gap:0;
+      border-top:1px solid var(--hair);
+    }
+
+    .bank-process article{
+      display:grid;
+      grid-template-columns:34px 1fr;
+      gap:14px;
+      padding:18px 0;
+      border-bottom:1px solid var(--hair);
+    }
+
+    .bank-process b{
+      width:28px;
+      height:28px;
+      border:1px solid var(--charcoal);
+      display:grid;
+      place-items:center;
+      font-size:10px;
+    }
+
+    .bank-process strong{display:block;font-size:13px}
+    .bank-process span{display:block;margin-top:5px;color:#74665c;font-size:12px;line-height:1.5}
+
+    .bank-console{
+      background:#211713;
+      color:#fff;
+      padding:54px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+    }
+
+    .bank-console::before{
+      content:"";
+      position:absolute;
+      inset:24px;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .bank-panel{
+      width:min(100%,460px);
+      position:relative;
+      z-index:2;
+    }
+
+    .bank-panel-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding-bottom:18px;
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .bank-panel-top strong{
+      font-size:11px;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+
+    .bank-panel-top i{color:var(--brass)}
+
+    .bank-card{
+      margin-top:24px;
+      min-height:230px;
+      padding:26px;
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.22),transparent 32%),
+        linear-gradient(145deg,#c7ab7c,#8e6b43);
+      color:#241812;
+      position:relative;
+      overflow:hidden;
+      border-radius:2px;
+      box-shadow:0 22px 38px rgba(0,0,0,.26);
+    }
+
+    .bank-card::after{
+      content:"BISA";
+      position:absolute;
+      right:-10px;
+      bottom:-26px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:96px;
+      color:rgba(34,23,19,.09);
+    }
+
+    .bank-card small{
+      display:block;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-weight:850;
+    }
+
+    .bank-card h3{
+      margin:18px 0 10px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:38px;
+      font-weight:500;
+    }
+
+    .bank-card p{
+      max-width:320px;
+      margin:0;
+      color:#4e3c31;
+      font-size:12px;
+      line-height:1.65;
+    }
+
+    .bank-card-code{
+      position:absolute;
+      left:26px;
+      bottom:22px;
+      font-size:10px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+
+    .bank-panel button{
+      width:100%;
+      min-height:54px;
+      margin-top:18px;
+      border:1px solid rgba(255,255,255,.18);
+      background:#fff;
+      color:#201612;
+      font-weight:900;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+    }
+
+    .quote-studio{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      display:grid;
+      grid-template-columns:.64fr 1.36fr;
+      min-height:640px;
+      background:#fffaf4;
+      border:1px solid rgba(23,19,16,.12);
+    }
+
+    .quote-intro{
+      padding:60px 46px;
+      background:
+        linear-gradient(180deg,rgba(181,143,104,.05),rgba(90,59,43,.12)),
+        repeating-linear-gradient(0deg,transparent 0 58px,rgba(23,19,16,.045) 58px 59px);
+    }
+
+    .quote-intro h2{
+      margin:22px 0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(42px,4.2vw,66px);
+      font-weight:500;
+      line-height:.96;
+      letter-spacing:-.045em;
+    }
+
+    .quote-intro p{
+      color:#685d54;
+      line-height:1.8;
+    }
+
+    .quote-contact{
+      margin-top:34px;
+      display:grid;
+      gap:14px;
+    }
+
+    .quote-contact div{
+      display:grid;
+      grid-template-columns:34px 1fr;
+      gap:10px;
+      align-items:center;
+      font-size:12px;
+    }
+
+    .quote-contact i{
+      width:32px;
+      height:32px;
+      border:1px solid var(--hair);
+      display:grid;
+      place-items:center;
+    }
+
+    .quote-formspace{
+      padding:60px;
+      background:#fff;
+    }
+
+    .quote-formspace h3{
+      margin:0 0 26px;
+      font-size:28px;
+      letter-spacing:-.03em;
+    }
+
+    .quote-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .quote-field{
+      display:grid;
+      gap:8px;
+    }
+
+    .quote-field.wide{grid-column:1/-1}
+
+    .quote-field label{
+      font-size:9px;
+      font-weight:850;
+      text-transform:uppercase;
+      letter-spacing:.13em;
+    }
+
+    .quote-field input,
+    .quote-field select,
+    .quote-field textarea{
+      width:100%;
+      border:0;
+      border-bottom:1px solid #9f8f80;
+      background:#f7f2ec;
+      outline:0;
+      padding:15px 13px;
+      color:var(--charcoal);
+    }
+
+    .quote-field textarea{min-height:112px;resize:vertical}
+
+    .quote-submit{
+      width:100%;
+      min-height:58px;
+      margin-top:22px;
+      border:0;
+      background:var(--charcoal);
+      color:#fff;
+      font-size:11px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+    }
+
+    .quote-note{
+      margin-top:12px;
+      color:#7a6d63;
+      font-size:10px;
+      line-height:1.5;
+    }
+
+    .questions-suite{
+      width:calc(var(--paper) - 96px);
+      margin:110px auto 0;
+      margin-left:calc((100% - var(--paper))/2 + 96px);
+      display:grid;
+      grid-template-columns:.78fr 1.22fr;
+      gap:54px;
+      align-items:start;
+    }
+
+    .questions-copy p{
+      color:#6b5f56;
+      line-height:1.8;
+      max-width:430px;
+    }
+
+    .question-tabs{
+      border-top:1px solid var(--hair);
+    }
+
+    .question-unit{
+      border-bottom:1px solid var(--hair);
+    }
+
+    .question-button{
+      width:100%;
+      min-height:80px;
+      border:0;
+      background:transparent;
+      display:grid;
+      grid-template-columns:42px 1fr 34px;
+      gap:16px;
+      align-items:center;
+      text-align:left;
+      padding:0;
+    }
+
+    .question-button b{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:22px;
+      color:#a18f80;
+    }
+
+    .question-button span{
+      font-size:15px;
+      font-weight:800;
+    }
+
+    .question-button i{
+      width:32px;
+      height:32px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--hair);
+      transition:.3s var(--flow);
+    }
+
+    .question-answer{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .4s var(--flow);
+    }
+
+    .question-answer p{
+      margin:0;
+      padding:0 46px 24px 58px;
+      color:#6f6359;
+      line-height:1.7;
+      font-size:14px;
+    }
+
+    .question-unit.open .question-answer{max-height:220px}
+    .question-unit.open .question-button i{
+      transform:rotate(45deg);
+      background:var(--charcoal);
+      color:#fff;
+    }
+
+    .final-gallery{
+      margin-top:110px;
+      min-height:760px;
+      background:#17110e;
+      color:#f6eee5;
+      position:relative;
+      overflow:hidden;
+      padding:92px max(20px,calc((100% - 1380px)/2));
+    }
+
+    .final-gallery::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size:72px 72px;
+      mask-image:linear-gradient(180deg,#000,transparent 96%);
+    }
+
+    .gallery-installation{
+      position:absolute;
+      right:3%;
+      top:7%;
+      width:55%;
+      height:86%;
+    }
+
+    .gallery-wall{
+      position:absolute;
+      inset:8% 4% 12% 8%;
+      border:1px solid rgba(255,255,255,.13);
+    }
+
+    .gallery-closet{
+      position:absolute;
+      right:14%;
+      top:18%;
+      width:46%;
+      height:54%;
+      border:16px solid #5c3e2e;
+      background:linear-gradient(90deg,#6e4b37 0 49%,#9e816a 49% 51%,#5b3d2e 51%);
+      box-shadow:24px 28px 46px rgba(0,0,0,.38);
+    }
+
+    .gallery-closet::before{
+      content:"";
+      position:absolute;
+      left:12px;
+      right:12px;
+      top:10px;
+      height:7px;
+      background:#ffcf7f;
+      box-shadow:0 0 18px rgba(255,204,121,.75);
+    }
+
+    .gallery-console{
+      position:absolute;
+      right:4%;
+      bottom:16%;
+      width:58%;
+      height:88px;
+      background:linear-gradient(180deg,#3d2a22,#221713);
+      transform:skewX(-12deg);
+      box-shadow:0 22px 32px rgba(0,0,0,.34);
+    }
+
+    .gallery-console::before,
+    .gallery-console::after{
+      content:"";
+      position:absolute;
+      width:12px;
+      height:118px;
+      background:#b58f68;
+      bottom:-94px;
+    }
+
+    .gallery-console::before{left:20%}
+    .gallery-console::after{right:20%}
+
+    .gallery-copy{
+      position:relative;
+      z-index:3;
+      width:56%;
+    }
+
+    .gallery-copy h2{
+      margin:26px 0;
+      max-width:760px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(58px,7vw,110px);
+      line-height:.84;
+      font-weight:500;
+      letter-spacing:-.065em;
+    }
+
+    .gallery-copy h2 span{
+      display:block;
+      color:#c49a63;
+      margin-left:14%;
+      font-style:italic;
+    }
+
+    .gallery-copy p{
+      max-width:610px;
+      color:#c4b6aa;
+      line-height:1.8;
+      font-size:15px;
+    }
+
+    .gallery-copy a{
+      margin-top:34px;
+      min-height:56px;
+      padding:0 22px;
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      background:#f4ece2;
+      color:#1d1410;
+      font-size:11px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+    }
+
+    .gallery-bottom{
+      position:absolute;
+      left:max(20px,calc((100% - 1380px)/2));
+      right:max(20px,calc((100% - 1380px)/2));
+      bottom:28px;
+      border-top:1px solid rgba(255,255,255,.13);
+      padding-top:18px;
+      display:grid;
+      grid-template-columns:1fr auto auto;
+      gap:24px;
+      color:#9f9084;
+      font-size:9px;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+      z-index:3;
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:24px;
+      bottom:24px;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      background:#211713;
+      color:#fff;
+      display:grid;
+      place-items:center;
+      z-index:90;
+      font-size:24px;
+      box-shadow:0 18px 38px rgba(29,20,16,.3);
+    }
+
+    .floating-whatsapp::before{
+      content:"";
+      position:absolute;
+      inset:-8px;
+      border:1px solid rgba(33,23,19,.24);
+      border-radius:50%;
+      animation:signal 2.2s ease-out infinite;
+    }
+
+    @keyframes signal{
+      0%{transform:scale(.82);opacity:1}
+      100%{transform:scale(1.35);opacity:0}
+    }
+
+    .soft-rise{opacity:0;transform:translateY(34px)}
+
+    @media (max-width:1120px){
+      .atelier-rail{display:none}
+      .showroom-header,
+      .grand-wardrobe,
+      .collection-board,
+      .craft-room,
+      .service-city,
+      .bank-salon,
+      .quote-studio,
+      .questions-suite{
+        width:var(--paper);
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .grand-wardrobe,
+      .collection-board,
+      .craft-room,
+      .service-city,
+      .bank-salon,
+      .quote-studio,
+      .questions-suite{
+        grid-template-columns:1fr;
+      }
+
+      .closet-stage{min-height:680px}
+      .collection-heading{position:relative;top:auto}
+      .gallery-copy{width:68%}
+      .gallery-installation{opacity:.42;width:70%;right:-12%}
+    }
+
+    @media (max-width:720px){
+      :root{--paper:calc(100% - 18px)}
+      .showroom-header{
+        min-height:66px;
+        padding:0 4px 0 10px;
+      }
+      .showroom-signature strong{font-size:22px}
+      .showroom-signature span,
+      .showroom-command small{display:none}
+      .showroom-command a span{display:none}
+      .showroom-command a{width:44px;padding:0;justify-content:center}
+
+      .grand-wardrobe{min-height:auto}
+      .wardrobe-copy{padding:62px 22px 40px}
+      .wardrobe-copy h1{font-size:58px}
+      .wardrobe-copy h1 span{margin-left:0}
+      .wardrobe-actions{display:grid}
+      .wardrobe-notes{grid-template-columns:1fr}
+      .wardrobe-notes div+div{
+        border-left:0;
+        border-top:1px solid var(--hair);
+        padding-left:0;
+      }
+
+      .closet-stage{min-height:520px}
+      .closet-shell{
+        width:88%;
+        right:3%;
+        top:14%;
+        height:64%;
+        gap:5px;
+      }
+      .ottoman{width:120px;height:64px;left:6%}
+      .collection-board,
+      .craft-room,
+      .service-city,
+      .bank-salon,
+      .quote-studio,
+      .questions-suite{margin-top:82px;gap:28px}
+
+      .craft-copy,
+      .bank-copy,
+      .bank-console,
+      .quote-intro,
+      .quote-formspace{padding:48px 22px}
+
+      .craft-line{grid-template-columns:98px 1fr}
+      .craft-visual{min-height:430px}
+      .joinery-frame{width:250px;height:250px;border-width:20px}
+
+      .city-cabinet{min-height:650px;padding:22px}
+      .city-drawers{width:100%;margin-top:300px}
+      .territory-shape{width:220px;height:250px;right:10%;top:13%}
+
+      .quote-grid{grid-template-columns:1fr}
+      .quote-field.wide{grid-column:auto}
+
+      .question-button{grid-template-columns:36px 1fr 32px}
+      .question-answer p{padding-left:52px}
+
+      .final-gallery{
+        min-height:800px;
+        padding:72px 18px 110px;
+      }
+      .gallery-copy{width:100%}
+      .gallery-copy h2{font-size:60px}
+      .gallery-installation{
+        width:100%;
+        height:48%;
+        top:auto;
+        bottom:90px;
+        right:-28%;
+        opacity:.35;
+      }
+      .gallery-bottom{
+        left:18px;
+        right:18px;
+        grid-template-columns:1fr;
+        gap:7px;
+      }
+
+      .floating-whatsapp{
+        width:56px;
+        height:56px;
+        right:16px;
+        bottom:16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <aside class="atelier-rail" aria-label="Navegación lateral">
+    <a href="#inicio" class="atelier-emblem" aria-label="Inicio">
+      <i class="fa-solid fa-cube"></i>
+    </a>
+
+    <nav class="atelier-links">
+      <a href="#colecciones" aria-label="Colecciones"><i class="fa-solid fa-table-columns"></i></a>
+      <a href="#materiales" aria-label="Materiales"><i class="fa-solid fa-layer-group"></i></a>
+      <a href="#cobertura" aria-label="Cobertura"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="#pagos" aria-label="Banco BISA"><i class="fa-solid fa-building-columns"></i></a>
+      <a href="#cotizar" aria-label="Cotizar"><i class="fa-solid fa-pen-ruler"></i></a>
+    </nav>
+
+    <span class="atelier-contact">Bolivia · Armarios a medida</span>
+  </aside>
+
+  <header class="showroom-header">
+    <a href="#inicio" class="showroom-signature">
+      <strong>Casa Nómada</strong>
+      <span>Closets & Interiorismo</span>
+    </a>
+
+    <div class="showroom-command">
+      <small>Proyectos en Bolivia</small>
+      <a href="https://wa.me/59175021384?text=Hola%2C%20quiero%20cotizar%20un%20armario%20a%20medida." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Solicitar diseño</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="grand-wardrobe" id="inicio">
+      <div class="wardrobe-copy">
+        <div>
+          <div class="wardrobe-label">Showroom de armarios premium</div>
+          <h1>Espacios hechos <span>para tu forma de vivir.</span></h1>
+          <p>
+            Fabricamos e instalamos armarios, walk-in closets y vestidores a medida en Bolivia.
+            Diseñamos interiores organizados con melamina, MDF, madera, herrajes, iluminación LED,
+            repisas, cajones y soluciones personalizadas.
+          </p>
+
+          <div class="wardrobe-actions">
+            <a href="#cotizar">
+              Cotizar proyecto
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#colecciones">
+              Explorar soluciones
+              <i class="fa-solid fa-compass-drafting"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="wardrobe-notes">
+          <div>
+            <strong>Diseño a medida</strong>
+            <span>Distribución interior según espacio, uso y estilo.</span>
+          </div>
+          <div>
+            <strong>Instalación coordinada</strong>
+            <span>Fabricación, montaje, ajustes y terminaciones.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="closet-stage" aria-label="Vestidor premium construido completamente con CSS">
+        <div class="ceiling-glow"></div>
+
+        <div class="closet-shell">
+          <div class="closet-bay">
+            <div class="hanger-bar"></div>
+          </div>
+
+          <div class="closet-bay central">
+            <div class="drawer-stack">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="closet-bay">
+            <div class="shelf-set">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="sliding-panel left" id="doorLeft"></div>
+          <div class="sliding-panel right" id="doorRight"></div>
+        </div>
+
+        <div class="ottoman"></div>
+        <div class="stage-caption">Puertas corredizas · Iluminación LED</div>
+      </div>
+    </section>
+
+    <section class="material-band" aria-label="Materiales y soluciones">
+      <div class="material-loop">
+        <span>Melamina</span><i class="fa-solid fa-circle"></i>
+        <span>MDF</span><i class="fa-solid fa-circle"></i>
+        <span>Madera</span><i class="fa-solid fa-circle"></i>
+        <span>Herrajes</span><i class="fa-solid fa-circle"></i>
+        <span>Iluminación LED</span><i class="fa-solid fa-circle"></i>
+        <span>Repisas</span><i class="fa-solid fa-circle"></i>
+        <span>Cajones</span><i class="fa-solid fa-circle"></i>
+        <span>Melamina</span><i class="fa-solid fa-circle"></i>
+        <span>MDF</span><i class="fa-solid fa-circle"></i>
+        <span>Madera</span><i class="fa-solid fa-circle"></i>
+        <span>Herrajes</span><i class="fa-solid fa-circle"></i>
+        <span>Iluminación LED</span><i class="fa-solid fa-circle"></i>
+        <span>Repisas</span><i class="fa-solid fa-circle"></i>
+        <span>Cajones</span><i class="fa-solid fa-circle"></i>
+      </div>
+    </section>
+
+    <section class="collection-board" id="colecciones">
+      <div class="collection-heading soft-rise">
+        <div class="microtag">Colecciones de interior</div>
+        <h2>Diseño funcional con presencia arquitectónica.</h2>
+        <p>
+          Cada armario se organiza según el espacio disponible, la cantidad de almacenamiento,
+          el tipo de puertas y la estética del ambiente.
+        </p>
+      </div>
+
+      <div class="collection-sequence">
+        <article class="collection-item soft-rise">
+          <div class="collection-number">01</div>
+          <div>
+            <h3>Armarios a medida</h3>
+            <p>Soluciones diseñadas según dimensiones, distribución y necesidades de uso.</p>
+            <small>Fabricación personalizada</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">02</div>
+          <div>
+            <h3>Walk-in closets</h3>
+            <p>Vestidores abiertos o cerrados con zonas para colgar, guardar, exhibir y organizar.</p>
+            <small>Interiorismo y almacenamiento</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">03</div>
+          <div>
+            <h3>Puertas corredizas</h3>
+            <p>Soluciones de apertura horizontal para optimizar circulación y aprovechar mejor el espacio.</p>
+            <small>Movimiento silencioso y limpio</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">04</div>
+          <div>
+            <h3>Puertas abatibles</h3>
+            <p>Configuraciones clásicas y contemporáneas con acceso completo al interior.</p>
+            <small>Acceso amplio</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">05</div>
+          <div>
+            <h3>Interiores personalizados</h3>
+            <p>Cajones, repisas, módulos de zapatos, organizadores y zonas específicas de guardado.</p>
+            <small>Distribución interior</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">06</div>
+          <div>
+            <h3>Iluminación LED</h3>
+            <p>Integración de luz para resaltar interiores, repisas y áreas de uso frecuente.</p>
+            <small>Ambiente y visibilidad</small>
+          </div>
+        </article>
+
+        <article class="collection-item soft-rise">
+          <div class="collection-number">07</div>
+          <div>
+            <h3>Instalación y ajustes</h3>
+            <p>Montaje, nivelación, regulación de puertas, herrajes y revisión final.</p>
+            <small>Terminación profesional</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="craft-room" id="materiales">
+      <div class="craft-copy soft-rise">
+        <div class="microtag" style="color:#cbb8a7">Materiales y construcción</div>
+        <h2>La calidad final está en cada unión.</h2>
+        <p>
+          El resultado depende de la combinación entre material, estructura, herrajes,
+          distribución, acabados e instalación. Por eso cada proyecto se revisa como una
+          pieza de mobiliario completa.
+        </p>
+
+        <div class="craft-ledger">
+          <div class="craft-line">
+            <strong>Melamina</strong>
+            <span>Variedad de acabados para interiores y frentes.</span>
+          </div>
+          <div class="craft-line">
+            <strong>MDF</strong>
+            <span>Soluciones versátiles para diseño y terminaciones.</span>
+          </div>
+          <div class="craft-line">
+            <strong>Madera</strong>
+            <span>Calidez visual y presencia natural.</span>
+          </div>
+          <div class="craft-line">
+            <strong>Herrajes</strong>
+            <span>Movimiento, cierre, soporte y ajuste.</span>
+          </div>
+          <div class="craft-line">
+            <strong>LED</strong>
+            <span>Iluminación integrada según diseño.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="craft-visual">
+        <div class="joinery-frame"></div>
+        <div class="joinery-core"></div>
+      </div>
+    </section>
+
+    <section class="service-city" id="cobertura">
+      <div class="service-city-copy soft-rise">
+        <div class="microtag">Cobertura en Bolivia</div>
+        <h2>Consulta tu ciudad.</h2>
+        <p>
+          Atendemos proyectos en distintas zonas del país. Busca tu ciudad y selecciónala
+          para cargarla directamente en la solicitud de cotización.
+        </p>
+
+        <div class="city-finder">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="cityLookup" type="search" placeholder="Buscar ciudad o departamento..." aria-label="Buscar ciudad o departamento">
+        </div>
+      </div>
+
+      <div class="city-cabinet soft-rise">
+        <div class="city-cabinet-head">
+          <strong>Directorio de cobertura</strong>
+          <span id="cityStatus">Selecciona una zona</span>
+        </div>
+
+        <div class="territory-shape" aria-hidden="true"></div>
+
+        <div class="city-drawers" id="cityDrawers">
+          <button class="city-drawer" type="button" data-city="Bolivia">
+            <strong>Bolivia</strong><span>Cobertura nacional</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Santa Cruz">
+            <strong>Santa Cruz</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="La Paz">
+            <strong>La Paz</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Cochabamba">
+            <strong>Cochabamba</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Sucre">
+            <strong>Sucre</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Tarija">
+            <strong>Tarija</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Oruro">
+            <strong>Oruro</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Potosí">
+            <strong>Potosí</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Beni">
+            <strong>Beni</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Pando">
+            <strong>Pando</strong><span>Coordinación</span>
+          </button>
+          <button class="city-drawer" type="button" data-city="Más zonas bajo coordinación">
+            <strong>Más zonas</strong><span>Bajo evaluación</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bank-salon" id="pagos">
+      <div class="bank-copy soft-rise">
+        <div class="microtag">Coordinación financiera</div>
+        <h2>Consulta de pagos con Banco BISA.</h2>
+        <p>
+          La información del pago se coordina directamente por WhatsApp una vez revisado
+          el alcance del proyecto, la ciudad, el diseño y los materiales.
+        </p>
+
+        <div class="bank-process">
+          <article>
+            <b>01</b>
+            <div>
+              <strong>Solicita la cotización</strong>
+              <span>Comparte ciudad, medidas y tipo de armario.</span>
+            </div>
+          </article>
+          <article>
+            <b>02</b>
+            <div>
+              <strong>Confirma el diseño</strong>
+              <span>Se revisan materiales, distribución e instalación.</span>
+            </div>
+          </article>
+          <article>
+            <b>03</b>
+            <div>
+              <strong>Consulta Banco BISA</strong>
+              <span>Recibe por WhatsApp la coordinación correspondiente.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="bank-console soft-rise">
+        <div class="bank-panel">
+          <div class="bank-panel-top">
+            <strong>Centro BISA · Bolivia</strong>
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div class="bank-card">
+            <small>Consulta de pagos</small>
+            <h3>Banco BISA</h3>
+            <p>
+              Coordinación del proceso de pago y validación del proyecto por WhatsApp.
+            </p>
+            <div class="bank-card-code">Armarios a medida · Bolivia</div>
+          </div>
+
+          <button type="button" onclick="openBankChat()">
+            Consultar pago por WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-studio" id="cotizar">
+      <div class="quote-intro soft-rise">
+        <div class="microtag">Estudio de proyecto</div>
+        <h2>Diseñemos tu armario.</h2>
+        <p>
+          Completa la información básica y abriremos WhatsApp con tu solicitud organizada
+          para facilitar la coordinación.
+        </p>
+
+        <div class="quote-contact">
+          <div>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+591 75021384</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Servicio en Bolivia</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Consulta de pagos: Banco BISA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-formspace soft-rise">
+        <h3>Ficha inicial de diseño</h3>
+
+        <form id="wardrobeForm">
+          <div class="quote-grid">
+            <div class="quote-field">
+              <label for="clientFullName">Nombre</label>
+              <input id="clientFullName" type="text" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="quote-field">
+              <label for="clientZone">Ciudad</label>
+              <input id="clientZone" type="text" placeholder="Ej. Santa Cruz" required>
+            </div>
+
+            <div class="quote-field">
+              <label for="projectType">Tipo de proyecto</label>
+              <select id="projectType" required>
+                <option value="">Seleccionar</option>
+                <option>Armario a medida</option>
+                <option>Walk-in closet</option>
+                <option>Vestidor</option>
+                <option>Puertas corredizas</option>
+                <option>Puertas abatibles</option>
+                <option>Aún no lo sé</option>
+              </select>
+            </div>
+
+            <div class="quote-field">
+              <label for="materialChoice">Material preferido</label>
+              <select id="materialChoice" required>
+                <option value="">Seleccionar</option>
+                <option>Melamina</option>
+                <option>MDF</option>
+                <option>Madera</option>
+                <option>Necesito asesoría</option>
+              </select>
+            </div>
+
+            <div class="quote-field wide">
+              <label for="projectMessage">Detalles</label>
+              <textarea id="projectMessage" placeholder="Indica medidas aproximadas, tipo de puertas, cantidad de cajones, repisas, iluminación LED u otros detalles."></textarea>
+            </div>
+          </div>
+
+          <button class="quote-submit" type="submit">
+            Enviar solicitud por WhatsApp
+          </button>
+
+          <div class="quote-note">
+            Al enviar se abrirá WhatsApp con la información de la solicitud. Este formulario no almacena datos.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="questions-suite" id="faq">
+      <div class="questions-copy soft-rise">
+        <div class="microtag">Preguntas frecuentes</div>
+        <h2>Antes de comenzar.</h2>
+        <p>
+          Respuestas generales para orientar la primera conversación sobre fabricación,
+          materiales, instalación, cobertura y pagos.
+        </p>
+      </div>
+
+      <div class="question-tabs soft-rise">
+        <article class="question-unit open">
+          <button class="question-button" type="button">
+            <b>01</b>
+            <span>¿Fabrican a medida?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="question-answer">
+            <p>
+              Sí. Cada armario se diseña de acuerdo con las medidas, la distribución interior
+              y el estilo del espacio.
+            </p>
+          </div>
+        </article>
+
+        <article class="question-unit">
+          <button class="question-button" type="button">
+            <b>02</b>
+            <span>¿Instalan?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="question-answer">
+            <p>
+              Sí. Se puede coordinar fabricación, traslado, montaje, ajustes y revisión final.
+            </p>
+          </div>
+        </article>
+
+        <article class="question-unit">
+          <button class="question-button" type="button">
+            <b>03</b>
+            <span>¿Qué materiales utilizan?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="question-answer">
+            <p>
+              Trabajamos opciones como melamina, MDF, madera, herrajes, iluminación LED
+              y diferentes acabados según el proyecto.
+            </p>
+          </div>
+        </article>
+
+        <article class="question-unit">
+          <button class="question-button" type="button">
+            <b>04</b>
+            <span>¿Trabajan en mi ciudad?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="question-answer">
+            <p>
+              Atendemos proyectos en Bolivia. La disponibilidad se confirma por WhatsApp
+              según la ciudad y el alcance.
+            </p>
+          </div>
+        </article>
+
+        <article class="question-unit">
+          <button class="question-button" type="button">
+            <b>05</b>
+            <span>¿Cómo coordino el pago por Banco BISA?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="question-answer">
+            <p>
+              Después de confirmar el diseño y el alcance, la coordinación del pago por Banco BISA
+              se realiza directamente por WhatsApp.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="final-gallery">
+    <div class="gallery-installation" aria-hidden="true">
+      <div class="gallery-wall"></div>
+      <div class="gallery-closet"></div>
+      <div class="gallery-console"></div>
+    </div>
+
+    <div class="gallery-copy soft-rise">
+      <div class="microtag" style="color:#bfae9f">Armarios a medida · Bolivia</div>
+      <h2>Orden que se siente <span>como diseño.</span></h2>
+      <p>
+        Armarios, vestidores y walk-in closets con interiores personalizados,
+        puertas corredizas o abatibles, iluminación LED, repisas, cajones e instalación.
+      </p>
+
+      <a href="https://wa.me/59175021384?text=Hola%2C%20quiero%20cotizar%20un%20armario%20a%20medida%20en%20Bolivia." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        Iniciar proyecto
+      </a>
+    </div>
+
+    <div class="gallery-bottom">
+      <span>© <span id="yearNow"></span> Casa Nómada · Bolivia</span>
+      <a href="#pagos">Banco BISA</a>
+      <a href="#inicio">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/59175021384?text=Hola%2C%20quiero%20cotizar%20un%20armario%20a%20medida." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    const whatsappNumber = "59175021384";
+
+    function openWhatsApp(message){
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    function openBankChat(){
+      openWhatsApp(
+        "Hola, quiero consultar la coordinación de pago por Banco BISA para un proyecto de armarios a medida en Bolivia."
+      );
+    }
+
+    document.getElementById("yearNow").textContent = new Date().getFullYear();
+
+    const cityLookup = document.getElementById("cityLookup");
+    const cityButtons = [...document.querySelectorAll(".city-drawer")];
+    const cityStatus = document.getElementById("cityStatus");
+    const clientZone = document.getElementById("clientZone");
+
+    function normalizeText(value){
+      return value
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g,"")
+        .trim();
+    }
+
+    cityLookup.addEventListener("input", function(){
+      const term = normalizeText(this.value);
+
+      cityButtons.forEach(button => {
+        const city = normalizeText(button.dataset.city);
+        button.classList.toggle("hide", !city.includes(term));
+      });
+
+      const visible = cityButtons.filter(button => !button.classList.contains("hide"));
+      cityStatus.textContent = visible.length
+        ? `${visible.length} zona${visible.length === 1 ? "" : "s"} disponible${visible.length === 1 ? "" : "s"}`
+        : "Consulta personalizada";
+    });
+
+    cityLookup.addEventListener("keydown", function(event){
+      if(event.key !== "Enter") return;
+
+      event.preventDefault();
+
+      const visible = cityButtons.filter(button => !button.classList.contains("hide"));
+
+      if(visible.length){
+        visible[0].click();
+      }else if(this.value.trim()){
+        clientZone.value = this.value.trim();
+        cityStatus.textContent = `Consultar: ${this.value.trim()}`;
+        document.getElementById("cotizar").scrollIntoView({behavior:"smooth"});
+      }
+    });
+
+    cityButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        cityButtons.forEach(item => item.classList.remove("selected"));
+        button.classList.add("selected");
+
+        const city = button.dataset.city;
+        clientZone.value = city === "Más zonas bajo coordinación" ? "" : city;
+        cityStatus.textContent = city;
+
+        document.getElementById("cotizar").scrollIntoView({behavior:"smooth"});
+        setTimeout(() => clientZone.focus({preventScroll:true}), 650);
+      });
+    });
+
+    document.getElementById("wardrobeForm").addEventListener("submit", function(event){
+      event.preventDefault();
+
+      const name = document.getElementById("clientFullName").value.trim();
+      const city = clientZone.value.trim();
+      const type = document.getElementById("projectType").value;
+      const material = document.getElementById("materialChoice").value;
+      const details = document.getElementById("projectMessage").value.trim() || "Sin detalles adicionales";
+
+      const message =
+`Hola, quiero solicitar una cotización para un armario a medida.
+
+Nombre: ${name}
+Ciudad: ${city}
+Tipo de proyecto: ${type}
+Material preferido: ${material}
+Detalles: ${details}
+
+También deseo conocer la coordinación de pago por Banco BISA.`;
+
+      openWhatsApp(message);
+    });
+
+    document.querySelectorAll(".question-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const unit = button.closest(".question-unit");
+
+        document.querySelectorAll(".question-unit").forEach(item => {
+          if(item !== unit) item.classList.remove("open");
+        });
+
+        unit.classList.toggle("open");
+      });
+    });
+
+    if(window.gsap){
+      gsap.registerPlugin(ScrollTrigger);
+
+      const doorTimeline = gsap.timeline({
+        repeat:-1,
+        repeatDelay:1.2
+      });
+
+      doorTimeline
+        .to("#doorLeft", {
+          xPercent:-74,
+          duration:1.8,
+          ease:"power2.inOut"
+        },0)
+        .to("#doorRight", {
+          xPercent:74,
+          duration:1.8,
+          ease:"power2.inOut"
+        },0)
+        .to({}, {duration:1.2})
+        .to("#doorLeft", {
+          xPercent:0,
+          duration:1.8,
+          ease:"power2.inOut"
+        })
+        .to("#doorRight", {
+          xPercent:0,
+          duration:1.8,
+          ease:"power2.inOut"
+        },"<");
+
+      gsap.from(".wardrobe-copy > div:first-child > *",{
+        opacity:0,
+        y:32,
+        duration:1,
+        stagger:.13,
+        ease:"power3.out"
+      });
+
+      gsap.from(".closet-shell",{
+        opacity:0,
+        scale:.9,
+        rotationY:10,
+        duration:1.4,
+        ease:"power3.out"
+      });
+
+      gsap.from(".ottoman",{
+        opacity:0,
+        y:60,
+        duration:1.1,
+        delay:.45,
+        ease:"power3.out"
+      });
+
+      gsap.utils.toArray(".soft-rise").forEach(element => {
+        gsap.to(element,{
+          opacity:1,
+          y:0,
+          duration:.9,
+          ease:"power3.out",
+          scrollTrigger:{
+            trigger:element,
+            start:"top 86%",
+            toggleActions:"play none none none"
+          }
+        });
+      });
+
+      gsap.to(".joinery-frame",{
+        rotation:405,
+        duration:24,
+        repeat:-1,
+        ease:"none"
+      });
+
+      gsap.to(".territory-shape",{
+        y:-10,
+        duration:2.6,
+        repeat:-1,
+        yoyo:true,
+        ease:"sine.inOut"
+      });
+
+      gsap.from(".city-drawer",{
+        opacity:0,
+        x:-24,
+        stagger:.07,
+        duration:.7,
+        ease:"power2.out",
+        scrollTrigger:{
+          trigger:".city-drawers",
+          start:"top 82%"
+        }
+      });
+
+      gsap.to(".gallery-closet",{
+        y:-12,
+        duration:2.8,
+        repeat:-1,
+        yoyo:true,
+        ease:"sine.inOut"
+      });
+    }else{
+      document.querySelectorAll(".soft-rise").forEach(element => {
+        element.style.opacity = "1";
+        element.style.transform = "none";
+      });
+    }
+  </script>
+</body>
+</html>
